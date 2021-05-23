@@ -2,7 +2,8 @@
   /* VARIABLES */
   /* Colores */
   --background-body: #efefef;
-  --background-table: #ccc;
+  --background-grey-table: #ccc;
+  --background-white-table: #eee;
 }
 
 html {
@@ -48,8 +49,10 @@ p {
 
 /* Al elemento table le pongo margen para que cuando estemos en un celular, la tabla no esté pegada a la pantalla */
 table {
+  position: relative;
   text-align: left;
-  border: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   border-spacing: 0;
   margin: auto;
 }
@@ -58,10 +61,30 @@ table th,
 table td {
   padding: 0 10px;
   border-right: 1px solid black;
-  min-width: 200px;
+  min-width: 180px;
   height: 37px;
 }
 
+th {
+  background-color: var(--background-white-table);
+}
+
 table tbody tr:nth-child(odd) {
-  background-color: var(--background-table);
+  background-color: var(--background-grey-table);
+}
+table tbody tr:nth-child(even) {
+  background-color: var(--background-white-table);
+}
+
+.fijo {
+  position: sticky;
+  left: 0;
+  border-left: 1px solid black;
+}
+
+table tbody tr:nth-child(odd) .fijo {
+  background-color: var(--background-grey-table);
+}
+table tbody tr:nth-child(even) .fijo {
+  background-color: var(--background-white-table);
 }
