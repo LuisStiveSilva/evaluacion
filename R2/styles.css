@@ -88,3 +88,10 @@ table tbody tr:nth-child(odd) .fijo {
 table tbody tr:nth-child(even) .fijo {
   background-color: var(--background-white-table);
 }
+
+/* HOVER */
+table tbody tr:hover,
+table tbody tr:hover .fijo {
+  background-color: royalblue;
+  color: white;
+}
