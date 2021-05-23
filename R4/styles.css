@@ -1,0 +1,95 @@
+:root {
+  /* VARIABLES */
+  /* Colores */
+  --background-body: #efefef;
+  --background-grey-table: #ccc;
+  --background-white-table: #eee;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.7rem;
+  background-color: var(--background-body);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.titulo {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.table-container {
+  max-width: 100%;
+  overflow-x: scroll;
+  margin: 15px;
+}
+
+table {
+  position: relative;
+  text-align: left;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-spacing: 0;
+  margin: auto;
+}
+
+table th,
+table td {
+  padding: 0 10px;
+  border-right: 1px solid black;
+  min-width: 120px;
+  height: 37px;
+}
+
+th {
+  background-color: var(--background-white-table);
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: var(--background-grey-table);
+}
+table tbody tr:nth-child(even) {
+  background-color: var(--background-white-table);
+}
+
+.fijo {
+  position: sticky;
+  left: 0;
+  border-left: 1px solid black;
+}
+
+table tbody tr:nth-child(odd) .fijo {
+  background-color: var(--background-grey-table);
+}
+table tbody tr:nth-child(even) .fijo {
+  background-color: var(--background-white-table);
+}
+
+/* HOVER */
+table tbody tr:hover,
+table tbody tr:hover .fijo {
+  background-color: royalblue;
+  color: white;
+}
