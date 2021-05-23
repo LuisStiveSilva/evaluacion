@@ -25,7 +25,6 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.7rem;
   background-color: var(--background-body);
-  overflow: hidden;
 }
 
 h1,
@@ -41,14 +40,12 @@ p {
   margin: 2rem auto;
 }
 
-/* Creo un table container para poder decirle que su ancho maximo es de 100% y le doy un overflow-x: scroll para poder scrollear en la tabla sin mover toda la pagina*/
 .table-container {
   max-width: 100%;
   overflow-x: scroll;
   margin: 15px;
 }
 
-/* Al elemento table le pongo margen para que cuando estemos en un celular, la tabla no esté pegada a la pantalla */
 table {
   position: relative;
   text-align: left;
@@ -62,7 +59,7 @@ table th,
 table td {
   padding: 0 10px;
   border-right: 1px solid black;
-  min-width: 180px;
+  min-width: 120px;
   height: 37px;
 }
 
