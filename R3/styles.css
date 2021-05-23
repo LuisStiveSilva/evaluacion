@@ -115,21 +115,30 @@ p {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
-  /* transform: translateY(-200%); */
   z-index: 1000;
 }
 
 .modal-ventana {
-  width: 50%;
+  width: 80%;
   transition: transform 500ms linear;
 }
-
+@media screen and (min-width: 1024px) {
+  .modal-ventana {
+    width: 50%;
+  }
+}
 .modal-cerrado {
   transform: translateY(-200%);
 }
 
 .video {
   width: 100%;
+}
+
+.boton-cerrar {
+  font-size: 30px;
+  color: #ccc;
+  cursor: pointer;
 }
 
 .icono:hover {
