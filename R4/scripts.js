@@ -2,14 +2,13 @@ let key = "1f50a87d32361c66bed879cec29c094a"
 let city = "New York"
 let cityArray = ['buenos aires', 'la paz', 'brasilia', 'santiago de chile', 'bogota', 'quito', 'georgetown', 'asuncion','lima','paramaribo','montevideo','caracas']
 let data
-const body = document.getElementById('table-body')
+const tableBody = document.getElementById('table-body')
 
 function getData(key, city) {
     fetch(`http://api.weatherstack.com/current?access_key=${key}&query=${city}`)
     .then(res => res.json())
     .then(res=>{
-        for(let i=0;i<1;i++){
-            body.innerHTML+=`
+            tableBody.innerHTML+=`
                 <tr>
                     <td class="fijo">${res.location.country}</td>
                     <td>${res.location.name}</td>
@@ -19,7 +18,6 @@ function getData(key, city) {
                     <td><img src="${res.current.weather_icons[0]}"></td>
                 </tr>
             `
-        }
     })
     .catch(err => {
         console.error(err);
