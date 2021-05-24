@@ -1,5 +1,4 @@
 let key = "e545ec04f84cefd2ed0600237fcf9466"
-let city = "New York"
 let cityArray = ['buenos aires', 'la paz', 'brasilia', 'santiago de chile', 'bogota', 'quito', 'georgetown', 'asuncion','lima','paramaribo','montevideo','caracas']
 let data
 const tableBody = document.getElementById('table-body')

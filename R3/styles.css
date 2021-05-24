@@ -81,7 +81,7 @@ p {
     max-width: 1024px;
     min-height: 500px;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
     border: 2px solid black;
     overflow: hidden;
